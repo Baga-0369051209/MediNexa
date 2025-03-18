@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   background-image: url(assets/bg1.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.container {
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    background-image: linear-gradient(180deg, rgb(76, 174, 227), rgb(190, 215, 243));
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(43, 38, 38, 0.995);
+    gap: 20px;
+    color: white;
+    animation: shadowPulse 2s infinite alternate;
+}
+
+@keyframes shadowPulse {
+    0% {
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+        box-shadow: 10px 10px 20px rgba(185, 102, 7, 0.7);
+    }
+    100% {
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    }
+}
+.appointment-form {
+    background-color: rgba(7, 57, 185, 0.7);
+    flex: 2;
+    padding: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(7, 57, 185, 0.7);
+    border-radius :5px;
+    animation: shadowPulse 2s infinite alternate;
+}
+
+
+@keyframes shadowPulse {
+    0% {
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+        box-shadow: 10px 10px 20px rgba(7, 57, 185, 0.7);
+    }
+    100% {
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    }
+}
+.appointment-form h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.appointment-form p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.department-dropdown {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+.textarea-group {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.textarea-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; /* Prevents resizing */
+    height: 80px; /* Adjust height as needed */
+    font-size: 14px;
+}
+
+.input-group input,
+.textarea-group textarea,
+.department-dropdown {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+/* Hover Effect */
+.input-group input:hover,
+.textarea-group textarea:hover,
+.department-dropdown:hover {
+    border-color: #2a5be6; /* Change border color on hover */
+    box-shadow: 0 0 5px rgba(42, 91, 230, 0.5); /* Soft glow effect */
+}
+
+/* Click/Focus Effect */
+.input-group input:focus,
+.textarea-group textarea:focus,
+.department-dropdown:focus {
+    border-color: #2a5be6; /* Highlighted border */
+    box-shadow: 0 0 8px rgba(5, 58, 203, 0.7); /* Stronger glow on focus */
+    background-color: #f8faff; /* Slight background color change */
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2a5be6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #1e4bcc;
+}
+
+.working-hours {
+    height: 350px;
+    flex: 1;
+    background-color: #2ae6baf3;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 20px; /* Adds space between the divs */
+}
+
+
+.working-hours h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.working-hours ul {
+    list-style: none;
+}
+
+.working-hours ul li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 12px; /* Increase space between list items */
+    padding-bottom: 5px; /* Optional: Adds some padding below each item */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Optional: Adds a subtle line between items */
+}
+
