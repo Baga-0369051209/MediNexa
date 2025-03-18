@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="appstyles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="appointment-form">
+            <h2>Book Your Appointment</h2>
+            <p>We will confirm your appointment within 2 hours</p>
+            <form id="appointmentForm">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Name" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="phone" placeholder="Phone" required>
+                    <select id="department">
+                        <option value="" disabled selected>Department</option>
+                        <option value="Cardiology">Cardiology</option>
+                        <option value="Dermatology">Dermatology</option>
+                        <option value="Neurology">Neurology</option>
+                        <option value="Pediatrics">Pediatrics</option>
+                        <option value="Orthopedics">Orthopedics</option>
+                        <option value="Gynecology">Gynecology</option>
+                        <option value="Dentistry">Dentistry</option>
+                        <option value="Ophthalmology">Ophthalmology</option>
+                        <option value="Psychiatry">Psychiatry</option>
+                        <option value="Oncology">Oncology</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <input type="number" id="age" placeholder="Age" required>
+                    <input type="date" id="date" required>
+                </div>
+                <button type="submit">Book An Appointment</button>
+            </form>
+        </div>
+        <div class="working-hours">
+            <h3>Working Hours</h3>
+            <ul>
+                <li>Monday <span>8.00-20.00</span></li>
+                <li>Tuesday <span>9.00-18.30</span></li>
+                <li>Wednesday <span>9.00-15.00</span></li>
+                <li>Thursday <span>8.00-20.00</span></li>
+                <li>Friday <span>9.00-18.30</span></li>
+                <li>Saturday <span>9.00-18.30</span></li>
+                <li>Sunday <span>11.00-15.00</span></li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
 
